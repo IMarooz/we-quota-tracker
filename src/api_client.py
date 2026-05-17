@@ -3,7 +3,7 @@ import requests
 from config import LND_PASS, ACCT_ID
 
 
-BASE_URL = "https://api-my.te.eg/echannel/service/besapp/base/rest/busiservice"
+BASE_URL = "https://my.te.eg/echannel/service/besapp/base/rest/busiservice"
 
 COMMON_HEADERS = {
     "Accept": "application/json, text/plain, */*",
