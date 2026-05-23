@@ -11,8 +11,8 @@ COMMON_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
     "Connection": "keep-alive",
     "Content-Type": "application/json",
-    "Origin": "https://api-my.te.eg",
-    "Referer": "https://api-my.te.eg/echannel/",
+    "Origin": "https://my.te.eg",
+    "Referer": "https://my.te.eg/echannel/",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-origin",
@@ -52,7 +52,7 @@ def init_session(session: requests.Session):
 def authenticate(session: requests.Session):
     """Step 2: Authenticate and return (name, subscriberId, token)."""
     url = f"{BASE_URL}/v1/auth/userAuthenticate"
-    headers = _build_headers(Host="api-my.te.eg")
+    headers = _build_headers(Host="my.te.eg")
     payload = {
         "acctId": ACCT_ID,
         "appLocale": "en-US",
