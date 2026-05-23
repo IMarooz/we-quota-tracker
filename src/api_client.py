@@ -41,7 +41,7 @@ def init_session(session: requests.Session):
     """Step 1: Hit the querySysParams endpoint to seed session cookies."""
     url = f"{BASE_URL}/v1/common/querySysParams"
     headers = _build_headers(
-        Host="api-my.te.eg",
+        Host="my.te.eg",
         **{"Cache-Control": "no-cache", "Pragma": "no-cache"}
     )
     resp = session.post(url, headers=headers, json={})
