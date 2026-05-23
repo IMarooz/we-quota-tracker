@@ -36,7 +36,7 @@ def tsConv(unix_timestamp, returnUntil=False):
 
 def check_internet_connection():
     try:
-        response = requests.get("https://google.com/", timeout=5)
+        response = requests.get("https://my.te.eg/", timeout=5)
         if response.status_code == 200:
             logging.info("Internet connection is available.")
     except requests.RequestException as e:
